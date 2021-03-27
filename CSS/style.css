@@ -11,6 +11,7 @@ body {
    font-family: 'Montserrat', sans-serif;
    font-weight: 600;
    color: var(--main-color);
+   letter-spacing: 0.02em;
 }
 
 .contact-details {
@@ -41,6 +42,7 @@ body {
    color: rgba(255, 255, 255, 0.5);
    margin-top: 0;
    margin-bottom: 0;
+   padding-left: 0;
 }
 
 .nav__list {
@@ -52,7 +54,6 @@ body {
    font-weight: bold;
    font-size: 18px;
    line-height: 28px;
-   letter-spacing: 0.02em;
 }
 
 .nav__list:last-child {
@@ -131,6 +132,78 @@ body {
    margin-bottom: 12px;
 }
 
+.quote {
+   position: relative;
+   align-self: end;
+   background-color: #fff;
+   padding: 48px 40px 32px;
+   background-image: url("/images/Vector.png");
+   background-repeat: no-repeat;
+   box-shadow: 0px 8px 20px rgba(3, 17, 6, 0.03);
+   border-radius: 4px;
+}
 
+.quote::before {
+   content: "";
+
+   position: absolute;
+   top: -24px;
+   left: -16px;
+
+   background: #FFFFFF;
+   box-shadow: 16px 12px 56px rgba(11, 29, 46, 0.15);
+   border-radius: 3px;
+
+   width: 56px;
+   height: 56px;
+
+   background-image: url("/images/quote.png");
+   background-repeat: no-repeat;
+   background-position: center center;
+}
+
+blockquote {
+   margin: 0;
+   margin-bottom: 20px;
+
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 24px;
+
+   color: #A4AEB4;
+}
+
+.author {
+   display: flex;
+   justify-content: space-between;
+}
+
+dt {
+   font-family: 'Montserrat Alternates', sans-serif;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 24px;
+
+   letter-spacing: 0.02em;
+
+   color: #07111B;
+}
+
+dd {
+   margin-left: 0;
+
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 20px;
+
+   letter-spacing: 0.02em;
+
+   color: #A4AEB4;
+}
+
+.up-logo {
+   position: relative;
+   top: 32px;
+}
 
 
