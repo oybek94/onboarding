@@ -1,0 +1,136 @@
+:root {
+   --main-color: #0B1D2E;
+   --descriptions-color: #A4AEB4;
+   --link-color: rgba(53,160,238,1);
+   --left-bg-color: #35A0EE;
+   --border-color: #D5D9DC;
+}
+
+body {
+   background-color: #DCE8FF;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 600;
+   color: var(--main-color);
+}
+
+.contact-details {
+   margin: 0 auto;
+   max-width: 1440px;
+   max-height: 900px;
+   display: grid;
+   grid-template-columns: 516px 1fr;
+
+   background-color: white;
+   box-shadow: 0px 0px 56px rgba(0, 133, 255, 0.05);
+   border-radius: 8px;  
+}
+
+.contact-details__left-block {
+   display: grid;
+   grid-template-rows: 256px 180px 372px;
+   
+   padding: 40px 74px 52px;
+
+   border-top-left-radius: 8px;
+   border-bottom-left-radius: 8px;
+   
+   background-color: var(--left-bg-color);
+}
+
+.nav__items {
+   color: rgba(255, 255, 255, 0.5);
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+.nav__list {
+   position: relative;
+   padding-left: 42px;
+   margin-bottom: 48px;
+
+   list-style: none;
+   font-weight: bold;
+   font-size: 18px;
+   line-height: 28px;
+   letter-spacing: 0.02em;
+}
+
+.nav__list:last-child {
+   margin-bottom: 0;
+}
+
+.active {
+   color: white;
+}
+
+.active::before {
+   content: "";
+   position: absolute;
+   background-image: url("/images/Active.png");
+   left: 0;
+   top: 0;
+   width: 28px;
+   height: 28px;
+}
+
+.passive::before {
+   content: "";
+   position: absolute;
+   background-image: url("/images/Activeless.png");
+   left: 0;
+   top: 0;
+   width: 28px;
+   height: 28px;
+}
+
+.vertical-line__top__active::before {
+   position: absolute;
+   display: block;
+   content: "";
+   background-image: url("/images/vertical\ line.png");
+   width: 4px;
+   height: 9px;
+   left: 12px;
+   margin-top: 12px;
+   margin-bottom: 6px;
+}
+
+.vertical-line__bottom__active::before {
+   position: absolute;
+   display: block;
+   content: "";
+   background-image: url("/images/vertical\ line.png");
+   width: 4px;
+   height: 9px;
+   left: 12px;
+   margin-top: 27px;
+   margin-bottom: 12px;
+}
+
+.vertical-line__top::before {
+   position: absolute;
+   display: block;
+   content: "";
+   background-image: url("/images/vertical\ line\ passive.png");
+   width: 4px;
+   height: 9px;
+   left: 12px;
+   margin-top: 12px;
+   margin-bottom: 6px;
+}
+
+.vertical-line__bottom::before {
+   position: absolute;
+   display: block;
+   content: "";
+   background-image: url("/images/vertical\ line\ passive.png");
+   width: 4px;
+   height: 9px;
+   left: 12px;
+   margin-top: 27px;
+   margin-bottom: 12px;
+}
+
+
+
+
