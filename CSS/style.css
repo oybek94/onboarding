@@ -14,6 +14,10 @@ body {
    letter-spacing: 0.02em;
 }
 
+.container {
+   padding: 36px 148px 44px 117px;
+}
+
 .contact-details {
    margin: 0 auto;
    max-width: 1440px;
@@ -180,7 +184,6 @@ blockquote {
 
 dt {
    font-family: 'Montserrat Alternates', sans-serif;
-   font-weight: 600;
    font-size: 16px;
    line-height: 24px;
 
@@ -207,3 +210,43 @@ dd {
 }
 
 
+/* ************** RIGHT SIDE ************ */
+
+.right-top {
+   display: flex;
+   justify-content: space-between;
+
+   font-size: 16px;
+   line-height: 24px;
+
+   color: rgba(164, 174, 180, 0.8);
+}
+
+.help {
+   display: flex;
+}
+
+.help-question {
+   margin: 0;
+   margin-right: 8px;
+}
+
+.help-link {
+   position: relative;
+   text-decoration: none;
+   line-height: 24px;
+   color: #2696E8;
+}
+
+.help-link::before {
+   content: "";
+
+   position: absolute;
+   right: -24px;
+   top: 3px;
+   width: 16px;
+   height: 16px;
+   
+   background-image: url("/images/Arrow.png");
+   background-repeat: no-repeat;
+}
