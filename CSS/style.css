@@ -12,6 +12,7 @@ body {
    font-weight: 600;
    color: var(--main-color);
    letter-spacing: 0.02em;
+   box-sizing: border-box;
 }
 
 .container {
@@ -215,6 +216,7 @@ dd {
 .right-top {
    display: flex;
    justify-content: space-between;
+   margin-bottom: 90px;
 
    font-size: 16px;
    line-height: 24px;
@@ -249,4 +251,34 @@ dd {
    
    background-image: url("/images/Arrow.png");
    background-repeat: no-repeat;
+}
+
+.right-title {
+   margin-top: 0;
+   margin-bottom: 12px;
+
+   font-family: Montserrat Alternates;
+   font-style: normal;
+   font-weight: 800;
+   font-size: 28px;
+   line-height: 36px;
+
+   color: #0B1D2E;
+}
+
+.right-description {
+   margin-top: 0;
+   margin-bottom: 46px;
+
+   font-weight: 500;
+   line-height: 24px;
+
+   color: #A4AEB4;
+}
+
+/* ***************** FORM ***************** */
+
+.input-text {
+   display: flex;
+   flex-direction: column;
 }
