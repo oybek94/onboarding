@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>USER ONBOARDING</title>
+
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600;700;800&family=Montserrat:ital,wght@0,500;0,600;1,500&display=swap"
+      rel="stylesheet">
+
+   <link rel="stylesheet" href="/CSS/normalize.css">
+   <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+   <div class="contact-details">
+      <div class="contact-details__left-block">
+
+         <div class="logo">
+            <a href="/index.html"><img src="/images/logo.png" alt="logo" width="249" width="16"></a>
+         </div>
+
+         <div class="contact-details__nav">
+            <ul class="nav__items">
+               <li class="nav__list active">Contact details
+                  <div class="vertical-line__top__active"></div>
+                  <div class="vertical-line__bottom__active"></div>
+               </li>
+               <li class="nav__list active">Investment plans
+                  <div class="vertical-line__top__active"></div>
+                  <div class="vertical-line__bottom__active"></div>
+               </li>
+               <li class="nav__list active">Investment preferences</li>
+            </ul>
+         </div>
+
+         <div class="quote">
+
+            <blockquote>
+               United Properties is about fast & easy searching, buying, selling and investing ever — online, with an
+               expert by our side
+            </blockquote>
+
+            <div class="author">
+               <dl>
+                  <dt>Ollie Mcmahon</dt>
+                  <dd>MANAGING DIRECTOR</dd>
+               </dl>
+
+               <img class="up-logo" src="/images/UP.png" alt="UP" width="41" height="24">
+            </div>
+         </div>
+
+      </div>
+      <div class="contact-details__right-block">
+
+         <div class="right-top">
+            <span class="step">STEP 3 OF 3</span>
+            <div class="help">
+               <p class="help-question">Lost or have trouble?</p>
+               <a class="mini-link " href="#">Get help</a>
+            </div>
+         </div>
+         <div class="form-container">
+            <h2 class="right-title">Investment preferences</h2>
+            <p class="right-description">This will help us figure out what your investment options are so that we can
+               show you only possibly intresting for you deals</p>
+
+            <h4 class="privacy-title">What kind of real estate are you interested in?</h4>
+
+            <form class="form checkboxes">
+               <div class="checkbox" id="checked" onclick="addclass('checked','single')">
+                  <input type="checkbox" name="single" id="single">
+                  <label>Single family</label>
+               </div>
+               <div class="checkbox" id="checked2" onclick="addclass('checked2','multifamily')">
+                  <input type="checkbox" name="multifamily" id="multifamily">
+                  <label>Residential multifamily</label>
+               </div>
+               <div class="checkbox" id="checked3" onclick="addclass('checked3','retail')">
+                  <input type="checkbox" name="retail" id="retail">
+                  <label>Commercial retail</label>
+               </div>
+               <div class="checkbox" id="checked4" onclick="addclass('checked4','industrial')">
+                  <input type="checkbox" name="industrial" id="industrial">
+                  <label>Commercial industrial</label>
+               </div>
+               <div class="checkbox" id="checked5" onclick="addclass('checked5','hospitality')">
+                  <input type="checkbox" name="hospitality" id="hospitality">
+                  <label>Commercial hospitality</label>
+               </div>
+               <div class="checkbox" id="checked6" onclick="addclass('checked6','warehousing')">
+                  <input type="checkbox" name="warehousing" id="warehousing">
+                  <label>Commercial warehousing</label>
+               </div>
+               <div class="checkbox" id="checked7" onclick=" addclass('checked7','office')">
+                  <input type="checkbox" name="office" id="office">
+                  <label>Commercial office</label>
+               </div>
+               <div class="checkbox" id="checked8" onclick="addclass('checked8','other')">
+                  <input type="checkbox" name="other" id="other">
+                  <label>Other</label>
+               </div>
+            </form>
+         </div>
+
+         <footer class="footer">
+            <a class="footer__back-link" href="/plans.html">Back to the homepage</a>
+            <div class="footer__right-links">
+               <a class="footer__skip-link" href="#">Skip for now</a>
+               <a class="footer__finish-link" href="#">Finish</a>
+            </div>
+         </footer>
+
+
+      </div>
+   </div>
+   </div>
+
+   <script src="./CSS/main.js"></script>
+</body>
+
+</html>

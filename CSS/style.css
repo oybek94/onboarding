@@ -6,6 +6,14 @@
    --border-color: #D5D9DC;
 }
 
+html {
+   box-sizing: border-box;
+}
+
+*, *::after, *::before {
+   box-sizing: inherit;
+}
+
 body {
    background-color: #DCE8FF;
    font-family: 'Montserrat', sans-serif;
@@ -20,7 +28,7 @@ a {
 }
 
 .form-container {
-   padding-right: 97px;
+   padding-right: 60px;
 }
 
 .contact-details {
@@ -447,26 +455,43 @@ color: #0B1D2E;
    background-repeat: no-repeat;
 }
 
-.footer__next-link:hover {
+.footer__next-link:hover, 
+.footer__finish-link:hover {
    box-shadow: none;
    background: rgba(53, 160, 238, 0.8);
 }
 
+.footer__finish-link {
+   position: relative;
+   padding: 12px 24px;
+   border-radius: 4px;
+   
+   text-decoration: none;
+   background: #35A0EE;
+   box-shadow: 0px 0px 20px rgba(53, 160, 238, 0.25);
+   border-radius: 4px;
+   color: white;
+}
+
 input[type="range"] {
-   width: 114%;
+   width: 110%;
    margin-bottom: 12px;
+   cursor: pointer;
 }
 
 table {
-   width: 130%;
+   width: 128%;
    margin-bottom: 46px;
 }
 .table-desc {
-   padding-right: 48px;
    font-size: 14px;
    line-height: 20px;
 
    color: #A1AFB8;
+}
+
+.table-desc:last-child {
+   padding: 0;
 }
 
 .choice {
@@ -503,3 +528,52 @@ input[type="radio"] {
    background: #F7FBFF;
 }
 
+
+/* ****************** PERFORMANCE PAGE ******************** */
+
+.checkboxes {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 20px;
+}
+
+.checkbox {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+
+   padding: 16px;
+   width: 136px;
+   height: 148px;
+
+   border: 1.5px solid #D5D9DC;
+   box-sizing: border-box;
+   box-shadow: 0px 0px 20px rgba(213, 217, 220, 0.05);
+   border-radius: 4px;
+}
+
+label[for="checkbox"] {
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 20px;
+
+   color: #031106;
+}
+
+input[type="checkbox"] {
+   width: 16px;
+   height: 16px;
+}
+
+.check-active {
+   background-color: #F6FBFF;
+   border: 1.5px solid #35A0EE;
+
+   font-family: Poppins;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 20px;
+
+   color: #35A0EE;
+}
