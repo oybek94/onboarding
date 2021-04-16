@@ -577,3 +577,11 @@ input[type="checkbox"] {
 
    color: #35A0EE;
 }
+
+@media only screen and (max-width: 767px) {
+   .contact-details {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+   }
+}

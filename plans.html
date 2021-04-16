@@ -21,7 +21,7 @@
       <div class="contact-details__left-block">
 
          <div class="logo">
-            <a href="/index.html"><img src="/images/logo.png" alt="logo" width="249" width="16"></a>
+            <a href="/index.html"><img src="/images/logo.png" alt="logo" width="249" height="16"></a>
          </div>
 
          <div class="contact-details__nav">
@@ -77,14 +77,14 @@
                   <fieldset>
                      <legend>From</legend>
                      <label for="number" class="input-text">
-                        <input class="number" type="number" name="number" required>
+                        <input id="number" class="number" type="number" name="number" required>
                      </label>
                   </fieldset>
 
                   <fieldset>
                      <legend>To</legend>
-                     <label for="number" class="input-text">
-                        <input class="number" type="number" name="number" required>
+                     <label for="number1" class="input-text">
+                        <input id="number1" class="number" type="number" name="number" required>
                      </label>
                   </fieldset>
                </div>
@@ -104,13 +104,13 @@
             <div class="privacy">
                <h4 class="privacy-title">Are you an accredited investor?</h4>
                <form class="choice">
-                  <div class="choice-btn checked">
-                     <input type="radio" id="choice1" name="choice" value="Yes" checked>
+                  <div class="choice-btn" id="checked9" onclick="addclass('checked9','choice1')">
+                     <input type="radio" id="choice1" name="choice" value="Yes">
                      <label class="lebel" for="choice1">Yes</label>
                   </div>
-                  <div class="choice-btn">
+                  <div class="choice-btn" id="checked10" onclick="addclass('checked10','choice2')">
                      <input type="radio" id="choice2" name="choice" value="No">
-                     <label for="choice2">No</label>
+                     <label class="label" for="choice2">No</label>
                   </div>
                </form>
             </div>
@@ -119,15 +119,15 @@
          <footer class="footer">
             <a class="footer__back-link" href="/index.html">Back to the homepage</a>
             <div class="footer__right-links">
-               <a class="footer__skip-link" href="#">Skip for now</a>
-               <a class="footer__next-link" href="#">Next step</a>
+               <a class="footer__skip-link" href="/preferences.html">Skip for now</a>
+               <a class="footer__next-link" href="/preferences.html">Next step</a>
             </div>
          </footer>
 
 
       </div>
    </div>
-   </div>
+   <script src="./CSS/main.js"></script>
 </body>
 
 </html>
